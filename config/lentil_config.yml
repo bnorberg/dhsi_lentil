@@ -1,0 +1,33 @@
+defaults: &defaults
+  instagram_client_id: "0625f76489eb4e31929358375f8fdf35"
+  instagram_client_secret: "4e32301d91664c7baa6d2a722e37f09f"
+  instagram_access_token: "1636675620.0625f76.8c80cd6ca98c4785bc932fa2aa332f17"
+  default_image_search_tag: "nepalquake"
+  # If populated, the next three fields will appear at the end of page titles as "application_name - division_name - organization_name"
+  application_name: "DHSI Lentil"
+  division_name: "DHSI"
+  division_url: "http://www.dhsi.org/"
+  organization_name: "University of Victoria"
+  meta_description: "A short description to include in the meta description tag"
+  base_image_file_dir: "/tmp/harvested"
+  donor_agreement_text: "The text for your donor agreement that will be submitted as a comment"
+  contact_email: "brian.norberg@duke.edu"
+  feed_description: "Images from Instagram tagged baltimoreriots"
+  # Uncomment to enable Google Analytics tracking
+  # google_analytics_tracker: "UA-XXXXXXXX-XX"
+
+development:
+  <<: *defaults
+  # Add or override config options here
+
+test:
+  <<: *defaults
+  # Add or override config options here
+
+staging:
+  <<: *defaults
+  # Add or override config options here
+
+production:
+  <<: *defaults
+  # Add or override config options here
